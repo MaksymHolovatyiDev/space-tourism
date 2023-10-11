@@ -1,0 +1,16 @@
+.root {
+  height: 96px;
+  width: 100%;
+
+  position: absolute;
+
+  top: 40px;
+
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 55px;
+}

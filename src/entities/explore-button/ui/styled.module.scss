@@ -1,0 +1,20 @@
+.root {
+  height: 274px;
+  width: 274px;
+
+  font-family: 'Bellefair', sans-serif;
+
+  color: var(--black);
+  font-size: 32px;
+  letter-spacing: 2px;
+
+  background-color: var(--white);
+
+  border-radius: 100%;
+
+  transition: box-shadow 150ms linear;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 88px #ffffff11;
+  }
+}

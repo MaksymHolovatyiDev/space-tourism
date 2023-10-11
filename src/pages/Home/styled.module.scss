@@ -1,0 +1,38 @@
+.root {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 0 165px 131px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./lib/background-home-desktop.jpg');
+}
+
+.container {
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+}
+
+.text {
+  text-transform: uppercase;
+
+  &-pre-title {
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  }
+
+  &-title {
+    font-size: 150px;
+  }
+}
