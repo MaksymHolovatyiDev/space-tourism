@@ -4,12 +4,18 @@ import LogoSvg from '../lib/logo.svg';
 import styles from './styled.module.scss';
 
 import {HeaderList} from './header-list';
+import {Line} from './line';
 
 export function Header() {
   return (
-    <div className={styles.root}>
+    <header className={styles.root}>
       <ReactSVG src={LogoSvg} />
-      <HeaderList />
-    </div>
+      <div className={styles.container}>
+        <Line />
+        <nav className={styles.navigation}>
+          <HeaderList />
+        </nav>
+      </div>
+    </header>
   );
 }

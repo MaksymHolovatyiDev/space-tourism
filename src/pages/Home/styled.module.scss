@@ -10,7 +10,14 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('./lib/background-home-desktop.jpg');
+  background-image: url('./assets/background-home-desktop.jpg');
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 96px 159px 90px;
+  }
 }
 
 .container {
@@ -19,20 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 24px;
-}
-
-.text {
-  text-transform: uppercase;
-
-  &-pre-title {
-    font-size: 28px;
-    letter-spacing: 4.72px;
-  }
-
-  &-title {
-    font-size: 150px;
-  }
 }

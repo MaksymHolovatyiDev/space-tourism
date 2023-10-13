@@ -1,0 +1,33 @@
+.root {
+  position: absolute;
+
+  top: 50%;
+  left: -443px;
+
+  z-index: 1;
+
+  width: 473px;
+
+  border-top: 1px solid rgba(255, 255, 255, 25%);
+
+  @media screen and (max-width: 1100px) {
+    border: none;
+  }
+}
+
+.container {
+  display: flex;
+
+  gap: 24px;
+
+  margin-top: 123px;
+}
+
+.white {
+  color: var(--white);
+}
+
+.gray {
+  color: var(--white);
+  opacity: 0.25;
+}

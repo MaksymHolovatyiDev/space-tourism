@@ -1,25 +1,22 @@
 import {ExploreButton} from 'entities/explore-button';
 import style from './styled.module.scss';
+import {Typography} from 'shared/Typography';
 
 function Home() {
   return (
-    <div className={style.root}>
+    <main className={style.root}>
       <div className={style.container}>
-        <p className={`${style['text-pre-title']} ${style.text}`}>
-          So, you wat to travel to
-        </p>
-        <h1 className={`base-title ${style['text-title']} ${style.text}`}>
-          Space
-        </h1>
-        <p className="main-text">
+        <Typography text="heading 5">So, you wat to travel to</Typography>
+        <Typography text="heading 1">Space</Typography>
+        <Typography>
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
           experience!
-        </p>
+        </Typography>
       </div>
       <ExploreButton />
-    </div>
+    </main>
   );
 }
 

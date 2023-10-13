@@ -1,0 +1,15 @@
+.root {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  padding-left: 165px;
+  padding-bottom: 97px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./assets/background-technology-desktop.jpg');
+}

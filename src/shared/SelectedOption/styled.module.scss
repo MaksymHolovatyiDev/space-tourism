@@ -1,0 +1,31 @@
+.option {
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--gray-violet);
+
+  transition: border 100ms ease-out;
+
+  border-bottom: 3px solid transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 50%);
+  }
+
+  &-selected {
+    color: var(--white);
+
+    border-bottom: 3px solid var(--white);
+
+    &:hover {
+      border-bottom: 3px solid var(--white);
+    }
+  }
+}
