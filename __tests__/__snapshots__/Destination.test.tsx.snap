@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  <img
+    alt="Moon"
+    src="src/entities/planet/assets/image-moon.webp"
+  />
+  <div>
+    <ul>
+      <li
+        onClick={[Function]}
+      >
+        <div
+          className="undefined undefined undefined"
+        >
+          <p
+            className="undefined undefined"
+          >
+            Moon
+          </p>
+        </div>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <div
+          className="undefined undefined false"
+        >
+          <p
+            className="undefined undefined"
+          >
+            Mars
+          </p>
+        </div>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <div
+          className="undefined undefined false"
+        >
+          <p
+            className="undefined undefined"
+          >
+            EUROPA
+          </p>
+        </div>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <div
+          className="undefined undefined false"
+        >
+          <p
+            className="undefined undefined"
+          >
+            TITAN
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="undefined"
+    >
+      <div>
+        <h2
+          className="undefined undefined undefined"
+        >
+          Moon
+        </h2>
+        <p
+          className="undefined undefined"
+        >
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+      <div>
+        <div>
+          <p
+            className="undefined undefined undefined"
+          >
+            avg. distance
+          </p>
+          <p
+            className="undefined undefined undefined"
+          >
+            384,400 km
+          </p>
+        </div>
+        <div>
+          <p
+            className="undefined undefined undefined"
+          >
+            est. travel time
+          </p>
+          <p
+            className="undefined undefined undefined"
+          >
+            3 days
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

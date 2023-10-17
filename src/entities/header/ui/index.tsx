@@ -12,7 +12,6 @@ import {useState} from 'react';
 export function Header() {
   const [headerNavigation, setHeaderNavigation] = useState(false);
 
-  console.log(headerNavigation);
   return (
     <header className={styles.root}>
       <ReactSVG src={LogoSvg} />

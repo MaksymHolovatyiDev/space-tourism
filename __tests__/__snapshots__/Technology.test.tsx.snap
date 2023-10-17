@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  <div>
+    <ul>
+      <li>
+        <button
+          className="undefined undefined"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          className="undefined false"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          className="undefined false"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+      </li>
+    </ul>
+    <div>
+      <ul
+        style={
+          {
+            "transform": "translateY( 0px)",
+            "transition": "transform 250ms linear",
+          }
+        }
+      >
+        <li>
+          <div>
+            <p
+              className="undefined undefined undefined"
+            >
+              The terminology…
+            </p>
+            <p
+              className="undefined undefined undefined"
+            >
+              LAUNCH VEHICLE
+            </p>
+            <p
+              className="undefined undefined"
+            >
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 1300px)"
+              srcSet="src/entities/technology-item/assets/image-launch-vehicle-landscape.jpg"
+            />
+            <img
+              alt="LAUNCH VEHICLE"
+              src="src/entities/technology-item/assets/image-launch-vehicle-portrait.jpg"
+            />
+          </picture>
+        </li>
+        <li>
+          <div>
+            <p
+              className="undefined undefined undefined"
+            >
+              The terminology…
+            </p>
+            <p
+              className="undefined undefined undefined"
+            >
+              SPACEPORT
+            </p>
+            <p
+              className="undefined undefined"
+            >
+              A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 1300px)"
+              srcSet="src/entities/technology-item/assets/image-space-capsule-landscape.jpg"
+            />
+            <img
+              alt="SPACEPORT"
+              src="src/entities/technology-item/assets/image-space-capsule-portrait.jpg"
+            />
+          </picture>
+        </li>
+        <li>
+          <div>
+            <p
+              className="undefined undefined undefined"
+            >
+              The terminology…
+            </p>
+            <p
+              className="undefined undefined undefined"
+            >
+              SPACE CAPSULE
+            </p>
+            <p
+              className="undefined undefined"
+            >
+              A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 1300px)"
+              srcSet="src/entities/technology-item/assets/image-spaceport-landscape.jpg"
+            />
+            <img
+              alt="SPACE CAPSULE"
+              src="src/entities/technology-item/assets/image-spaceport-portrait.jpg"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+`;

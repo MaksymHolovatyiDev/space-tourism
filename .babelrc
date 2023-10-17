@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "entities": "./src/entities"
+        }
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-env",
+    ["@babel/preset-react", {"runtime": "automatic"}],
+    "@babel/preset-typescript"
+  ]
+}
