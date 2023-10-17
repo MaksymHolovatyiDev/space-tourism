@@ -8,4 +8,5 @@ function App() {
   return <Routing />;
 }
 
-export default withProviders(App);
+const MainApp = withProviders(App);
+export default MainApp;
