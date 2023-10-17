@@ -5,12 +5,14 @@ import {PlanetData} from 'shared/Types';
 
 export function Planet({currentPlanet}: {currentPlanet: PlanetData}) {
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root}`}>
       <div>
         <Typography text="heading 2" additionalStyles={styles['margin-bottom']}>
           {currentPlanet.name}
         </Typography>
-        <Typography>{currentPlanet.desc}</Typography>
+        <Typography additionalStyles={styles['text-center']}>
+          {currentPlanet.desc}
+        </Typography>
       </div>
       <AdditionalData currentPlanet={currentPlanet} />
     </div>

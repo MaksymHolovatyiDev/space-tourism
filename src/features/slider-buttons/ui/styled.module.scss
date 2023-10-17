@@ -12,6 +12,28 @@
     gap: 32px;
 
     margin-top: 111px;
+
+    @media screen and (max-width: 1300px) {
+      position: absolute;
+
+      top: 366px;
+
+      z-index: 1;
+
+      flex-direction: row;
+
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 615px) {
+      position: absolute;
+
+      top: 204px;
+
+      z-index: 1;
+
+      flex-direction: row;
+    }
   }
 }
 
@@ -22,12 +44,18 @@
   background-color: var(--white);
 
   border-radius: 100%;
+  padding: 0;
 
   opacity: 0.1744;
 
   cursor: pointer;
 
   transition: opacity 250ms linear;
+
+  @media screen and (max-width: 1300px) {
+    height: 10px;
+    width: 10px;
+  }
 
   &:hover {
     opacity: 0.5;
@@ -44,12 +72,33 @@
     font-family: 'Bellefair', sans-serif;
     font-size: 32px;
 
+    background-color: transparent;
+
     color: var(--white);
 
     border: 1px solid #ffffff40;
     border-radius: 100%;
+    padding: 0;
 
     cursor: pointer;
+
+    @media screen and (max-width: 1300px) {
+      height: 60px;
+      width: 60px;
+
+      font-size: 24px;
+
+      letter-spacing: 1.5px;
+    }
+
+    @media screen and (max-width: 615px) {
+      height: 40px;
+      width: 40px;
+
+      font-size: 16px;
+
+      letter-spacing: 1px;
+    }
   }
 }
 

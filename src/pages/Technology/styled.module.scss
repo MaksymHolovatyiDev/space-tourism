@@ -6,10 +6,25 @@
   justify-content: flex-start;
   align-items: flex-end;
 
-  padding-left: 165px;
-  padding-bottom: 97px;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('./assets/background-technology-desktop.jpg');
+
+  padding-left: 165px;
+  padding-bottom: 97px;
+
+  @media screen and (max-width: 1300px) {
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url('./assets/background-technology-tablet.jpg');
+
+    padding: 220px 155px 97px;
+  }
+
+  @media screen and (max-width: 615px) {
+    background-image: url('./assets/background-technology-mobile.jpg');
+
+    padding: 139px 24px 81px;
+  }
 }

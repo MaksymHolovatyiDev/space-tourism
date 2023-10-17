@@ -1,7 +1,18 @@
 .root {
   display: flex;
 
-  gap: 36px;
+  gap: 35px;
 
   margin-bottom: 37px;
+
+  @media screen and (max-width: 1300px) {
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 32px;
+  }
+
+  @media screen and (max-width: 615px) {
+    margin-bottom: 20px;
+  }
 }

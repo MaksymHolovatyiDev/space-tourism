@@ -10,17 +10,48 @@
 
   border-top: 1px solid rgba(255, 255, 255, 25%);
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1300px) {
+    top: auto;
+    bottom: -40px;
+    left: calc(487px - 100vw + 39px);
+
+    width: auto;
+
     border: none;
+
+    transform: translateY(100%);
+  }
+
+  @media screen and (max-width: 615px) {
+    top: 88px;
+    bottom: auto;
+    left: auto;
+    right: 50vw;
+
+    z-index: -1;
+
+    transform: translateX(50%);
+
+    text-wrap: nowrap;
   }
 }
 
 .container {
   display: flex;
+  align-items: center;
 
   gap: 24px;
 
   margin-top: 123px;
+
+  @media screen and (max-width: 1300px) {
+    gap: 19px;
+
+    margin-top: 0px;
+  }
+  @media screen and (max-width: 615px) {
+    gap: 16px;
+  }
 }
 
 .white {

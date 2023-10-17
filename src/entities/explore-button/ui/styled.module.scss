@@ -17,4 +17,17 @@
   &:hover {
     box-shadow: 0px 0px 0px 88px #ffffff11;
   }
+
+  @media screen and (max-width: 1300px) {
+    height: 242px;
+    width: 242px;
+  }
+
+  @media screen and (max-width: 615px) {
+    height: 150px;
+    width: 150px;
+
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
 }

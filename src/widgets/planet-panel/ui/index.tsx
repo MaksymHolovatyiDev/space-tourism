@@ -8,7 +8,7 @@ export function PlanetPanel() {
 
   return (
     <>
-      <img src={planet.img} alt={planet.name} />
+      <img src={planet.img} alt={planet.name} className={styles.image} />
       <div className={styles.margin}>
         <PlanetSelect
           data={planets}

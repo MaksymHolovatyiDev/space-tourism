@@ -5,14 +5,16 @@ export function SelectedOption({
   value,
   expectedValue,
   children,
+  vertical,
 }: {
   value: string;
   expectedValue: any;
   children: ReactNode;
+  vertical?: boolean;
 }) {
   return (
     <div
-      className={`${styles.option} ${
+      className={`${styles.option} ${vertical && styles.vertical} ${
         value === expectedValue && styles['option-selected']
       }`}
       id={styles.selected}>

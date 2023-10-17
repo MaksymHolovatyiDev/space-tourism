@@ -4,19 +4,21 @@ import {routes} from 'entities/header/lib';
 import {Typography} from 'shared/Typography';
 import {SelectedOption} from 'shared/SelectedOption';
 
-export function HeaderList() {
+export function HeaderList({headerNavigation}: {headerNavigation: boolean}) {
   const pathname = useLocation().pathname;
 
   return (
-    <ul className={styles.root}>
+    <ul className={`${styles.root} ${headerNavigation && styles.show}`}>
       {routes.map((el, idx) => (
         <li className={styles['full-height']} key={idx + el.name}>
           <Link to={el.path} className={styles['full-height']}>
-            <SelectedOption value={pathname} expectedValue={el.path}>
+            <SelectedOption value={pathname} expectedValue={el.path} vertical>
               <Typography text="nav" additionalStyles={styles.bold}>
                 {String(idx).padStart(2, '0')}
               </Typography>
-              <Typography text="nav" additionalStyles={styles.white}>
+              <Typography
+                text="nav"
+                additionalStyles={`${styles.white} ${styles.text}`}>
                 {el.name}
               </Typography>
             </SelectedOption>

@@ -11,4 +11,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('./assets/background-destination-desktop.jpg');
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 53px;
+
+    padding: 220px 98px 62px 97px;
+
+    background-image: url('./assets/background-destination-desktop.jpg');
+  }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 26px;
+
+    padding: 139px 24px 58px;
+
+    background-image: url('./assets/background-destination-mobile.jpg');
+  }
 }

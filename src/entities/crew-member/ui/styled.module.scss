@@ -3,9 +3,20 @@
   max-width: 444px;
 
   color: var(--gray-violet);
+
+  @media screen and (max-width: 1300px) {
+    width: auto;
+    max-width: none;
+    height: 84px;
+
+    text-align: center;
+  }
 }
 
 .margin {
-    margin: 15px 0 27px;
+  margin: 15px 0 27px;
 
+  @media screen and (max-width: 1300px) {
+    margin: 8px 0 16px;
+  }
 }

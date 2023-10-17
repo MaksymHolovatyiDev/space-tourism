@@ -13,4 +13,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('./assets/background-crew-desktop.jpg');
+
+  @media screen and (max-width: 1300px) {
+    align-items: flex-start;
+
+    background-image: url('./assets/background-crew-tablet.jpg');
+
+    padding: 220px 88px 0;
+
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 615px) {
+    align-items: flex-start;
+
+    background-image: url('./assets/background-crew-mobile.jpg');
+
+    padding: 362px 24px 104px;
+  }
 }

@@ -20,7 +20,7 @@ export function TechnologyList() {
         <ul
           className={styles.list}
           style={{
-            transform: `translateY( ${currentTechnology * -519 * 2}px)`,
+            transform: `translateY( ${currentTechnology * -683 * 2}px)`,
             transition: 'transform 250ms linear',
           }}>
           {technologies.map(el => (
@@ -29,7 +29,14 @@ export function TechnologyList() {
                 technology={el.technology}
                 description={el.desc}
               />
-              <img src={el.img} alt={el.technology} />
+              <picture>
+                <source srcSet={el.imgLandscape} media="(max-width: 1300px)" />
+                <img
+                  src={el.img}
+                  alt={el.technology}
+                  className={styles.image}
+                />
+              </picture>
             </li>
           ))}
         </ul>

@@ -13,6 +13,24 @@
 
   border-bottom: 3px solid transparent;
 
+  &.vertical {
+    @media screen and (max-width: 615px) {
+      justify-content: flex-start;
+
+      border-bottom: none;
+
+      border-right: 4px solid transparent;
+
+      &:hover {
+        @media screen and (max-width: 615px) {
+          border-bottom: none;
+
+          border-right: 4px solid rgba(255, 255, 255, 50%);
+        }
+      }
+    }
+  }
+
   cursor: pointer;
 
   &:hover {
@@ -23,6 +41,22 @@
     color: var(--white);
 
     border-bottom: 3px solid var(--white);
+
+    &.vertical {
+      @media screen and (max-width: 615px) {
+        border-bottom: none;
+
+        border-right: 4px solid var(--white);
+      }
+
+      &:hover {
+        @media screen and (max-width: 615px) {
+          border-bottom: none;
+
+          border-right: 4px solid var(--white);
+        }
+      }
+    }
 
     &:hover {
       border-bottom: 3px solid var(--white);

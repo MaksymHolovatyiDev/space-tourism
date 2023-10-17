@@ -1,11 +1,43 @@
-.root{
-    margin-top: 111px;
+.root {
+  margin-top: 111px;
+
+  @media screen and (max-width: 1300px) {
+    height: 213px;
+
+    text-align: center;
+
+    margin-top: 0;
+  }
 }
 
 .margin {
   margin: 11px 0 17px;
+
+  @media screen and (max-width: 1300px) {
+    margin: 16px 0;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 9px;
+  }
 }
 
 .width {
   max-width: 444px;
+  @media screen and (max-width: 1300px) {
+    max-width: none;
+
+    margin: 0 155px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin: 0 24px;
+  }
+}
+
+.terminology {
+  &.text {
+    font-size: 14px;
+    letter-spacing: 2.362px;
+  }
 }

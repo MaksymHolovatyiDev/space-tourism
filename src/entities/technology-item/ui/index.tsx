@@ -11,7 +11,9 @@ export function TechnologyItem({
 }) {
   return (
     <div className={styles.root}>
-      <Typography>The terminology…</Typography>
+      <Typography additionalStyles={`${styles.text} ${styles.terminology}`}>
+        The terminology…
+      </Typography>
       <Typography text="heading 3" additionalStyles={styles.margin}>
         {technology}
       </Typography>
