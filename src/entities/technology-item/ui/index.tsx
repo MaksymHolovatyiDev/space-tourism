@@ -1,6 +1,6 @@
 import styles from './styled.module.scss';
 
-import {Typography} from 'shared/Typography';
+import {Typography} from 'shared';
 
 export function TechnologyItem({
   technology,
@@ -11,13 +11,13 @@ export function TechnologyItem({
 }) {
   return (
     <div className={styles.root}>
-      <Typography additionalStyles={`${styles.text} ${styles.terminology}`}>
+      <Typography className={`${styles.text} ${styles.terminology}`}>
         The terminology…
       </Typography>
-      <Typography text="heading 3" additionalStyles={styles.margin}>
+      <Typography variant="heading3" className={styles.margin}>
         {technology}
       </Typography>
-      <Typography additionalStyles={styles.width}>{description}</Typography>
+      <Typography className={styles.width}>{description}</Typography>
     </div>
   );
 }

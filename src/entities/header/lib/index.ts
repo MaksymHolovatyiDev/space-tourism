@@ -1,5 +1,5 @@
 import {useLocation} from 'react-router';
-import {BaseRoutes} from 'shared/Routes';
+import {BaseRoutes} from 'shared';
 
 export const routes = [
   {name: 'Home', path: BaseRoutes.Home},

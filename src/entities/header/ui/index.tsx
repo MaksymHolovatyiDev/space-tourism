@@ -1,4 +1,6 @@
 import {ReactSVG} from 'react-svg';
+import {motion} from 'framer-motion';
+
 import LogoSvg from '../lib/logo.svg';
 import Burger from '../lib/Burger.svg';
 import Cross from '../lib/Cross.svg';
@@ -13,7 +15,16 @@ export function Header() {
   const [headerNavigation, setHeaderNavigation] = useState(false);
 
   return (
-    <header className={styles.root}>
+    <motion.header
+      key="header"
+      initial={{scaleY: 0, top: 0}}
+      animate={{
+        scaleY: 1,
+        top: 40,
+        transition: {duration: 0.5, ease: 'circOut'},
+      }}
+      exit={{opacity: 0, transition: {duration: 0.5, ease: 'circIn'}}}
+      className={styles.root}>
       <ReactSVG src={LogoSvg} />
 
       <button
@@ -31,6 +42,6 @@ export function Header() {
           <HeaderList headerNavigation={headerNavigation} />
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -24,7 +24,7 @@ export function TechnologyList() {
             transition: 'transform 250ms linear',
           }}>
           {technologies.map(el => (
-            <li className={styles.item}>
+            <li className={styles.item} key={el.technology}>
               <TechnologyItem
                 technology={el.technology}
                 description={el.desc}

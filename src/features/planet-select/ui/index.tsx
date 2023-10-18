@@ -1,8 +1,8 @@
 import styles from './styled.module.scss';
 
-import {SelectedOption} from 'shared/SelectedOption';
-import {PlanetData} from 'shared/Types';
-import {Typography} from 'shared/Typography';
+import {SelectedOption} from 'shared';
+import {PlanetData} from 'shared';
+import {Typography} from 'shared';
 
 export function PlanetSelect({
   data,
@@ -18,7 +18,7 @@ export function PlanetSelect({
       {data.map(el => (
         <li key={el.name} onClick={() => setCurrentPlanet(el)}>
           <SelectedOption value={currentPlanet.name} expectedValue={el.name}>
-            <Typography text="nav">{el.name}</Typography>
+            <Typography variant="nav">{el.name}</Typography>
           </SelectedOption>
         </li>
       ))}

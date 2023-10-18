@@ -1,7 +1,7 @@
 import {useTitle} from 'entities/header/lib';
 import styles from './styled.module.scss';
 
-import {Typography} from 'shared/Typography';
+import {Typography} from 'shared';
 
 export function Line() {
   const data = useTitle();
@@ -10,10 +10,10 @@ export function Line() {
     <div className={styles.root}>
       {data && (
         <div className={styles.container}>
-          <Typography text="heading 5" additionalStyles={styles.gray}>
+          <Typography variant="heading5" className={styles.gray}>
             {data.num}
           </Typography>{' '}
-          <Typography text="heading 5" additionalStyles={styles.white}>
+          <Typography variant="heading5" className={styles.white}>
             {data.title}
           </Typography>
         </div>

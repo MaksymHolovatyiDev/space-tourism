@@ -1,16 +1,16 @@
-import {Typography} from 'shared/Typography';
+import {Typography} from 'shared';
 import styles from './styled.module.scss';
 import {AdditionalData} from './additional-data';
-import {PlanetData} from 'shared/Types';
+import {PlanetData} from 'shared';
 
 export function Planet({currentPlanet}: {currentPlanet: PlanetData}) {
   return (
     <div className={`${styles.root}`}>
       <div>
-        <Typography text="heading 2" additionalStyles={styles['margin-bottom']}>
+        <Typography variant="heading2" className={styles['margin-bottom']}>
           {currentPlanet.name}
         </Typography>
-        <Typography additionalStyles={styles['text-center']}>
+        <Typography className={styles['text-center']}>
           {currentPlanet.desc}
         </Typography>
       </div>

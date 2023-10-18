@@ -2,7 +2,7 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {Header} from '../src/entities/header';
 import React from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import {BaseRoutes} from '../src/shared/Routes';
+import {BaseRoutes} from '../src/shared';
 
 it('navigation', () => {
   expect(window.location.pathname).toBe(BaseRoutes.Home);

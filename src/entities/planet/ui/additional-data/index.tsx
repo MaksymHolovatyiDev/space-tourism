@@ -1,32 +1,24 @@
-import {Typography} from 'shared/Typography';
+import {Typography} from 'shared';
 import styles from './styled.module.scss';
-import {PlanetData} from 'shared/Types';
+import {PlanetData} from 'shared';
 
 export function AdditionalData({currentPlanet}: {currentPlanet: PlanetData}) {
   return (
     <div className={styles.root}>
       <div>
-        <Typography
-          text="subheading 2"
-          additionalStyles={styles['text-center']}>
+        <Typography variant="subheading2" className={styles['text-center']}>
           avg. distance
         </Typography>
-        <Typography
-          text="subheading 1"
-          additionalStyles={styles['text-center']}>
+        <Typography variant="subheading1" className={styles['text-center']}>
           {currentPlanet.dist}
         </Typography>
       </div>
 
       <div>
-        <Typography
-          text="subheading 2"
-          additionalStyles={styles['text-center']}>
+        <Typography variant="subheading2" className={styles['text-center']}>
           est. travel time
         </Typography>
-        <Typography
-          text="subheading 1"
-          additionalStyles={styles['text-center']}>
+        <Typography variant="subheading1" className={styles['text-center']}>
           {currentPlanet.time}
         </Typography>
       </div>

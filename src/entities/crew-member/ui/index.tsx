@@ -1,6 +1,6 @@
 import styles from './styled.module.scss';
 
-import {Typography} from 'shared/Typography';
+import {Typography} from 'shared';
 
 export function CrewMember({
   role,
@@ -13,11 +13,11 @@ export function CrewMember({
 }) {
   return (
     <>
-      <Typography text="heading 4">{role}</Typography>
-      <Typography text="heading 3" additionalStyles={styles.margin}>
+      <Typography variant="heading4">{role}</Typography>
+      <Typography variant="heading3" className={styles.margin}>
         {name}
       </Typography>
-      <Typography additionalStyles={styles.bio}>{bio}</Typography>
+      <Typography className={styles.bio}>{bio}</Typography>
     </>
   );
 }

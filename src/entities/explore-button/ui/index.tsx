@@ -1,9 +1,11 @@
+import {Link} from 'react-router-dom';
 import styles from './styled.module.scss';
+import {BaseRoutes} from 'shared';
 
 export function ExploreButton() {
   return (
-    <button type="button" className={styles.root}>
+    <Link to={BaseRoutes.Destination} className={styles.root}>
       Explore
-    </button>
+    </Link>
   );
 }

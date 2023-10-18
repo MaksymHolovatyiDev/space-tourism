@@ -1,8 +1,8 @@
 import {Link, useLocation} from 'react-router-dom';
 import styles from './styles.module.scss';
 import {routes} from 'entities/header/lib';
-import {Typography} from 'shared/Typography';
-import {SelectedOption} from 'shared/SelectedOption';
+import {Typography} from 'shared';
+import {SelectedOption} from 'shared';
 
 export function HeaderList({headerNavigation}: {headerNavigation: boolean}) {
   const pathname = useLocation().pathname;
@@ -13,12 +13,12 @@ export function HeaderList({headerNavigation}: {headerNavigation: boolean}) {
         <li className={styles['full-height']} key={idx + el.name}>
           <Link to={el.path} className={styles['full-height']}>
             <SelectedOption value={pathname} expectedValue={el.path} vertical>
-              <Typography text="nav" additionalStyles={styles.bold}>
+              <Typography variant="nav" className={styles.bold}>
                 {String(idx).padStart(2, '0')}
               </Typography>
               <Typography
-                text="nav"
-                additionalStyles={`${styles.white} ${styles.text}`}>
+                variant="nav"
+                className={`${styles.white} ${styles.text}`}>
                 {el.name}
               </Typography>
             </SelectedOption>
