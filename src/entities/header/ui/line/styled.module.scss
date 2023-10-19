@@ -2,11 +2,11 @@
   position: absolute;
 
   top: 50%;
-  left: -443px;
+  left: calc(1031px - 100vw);
 
   z-index: 1;
 
-  width: 473px;
+  width: calc(100vw - 967px);
 
   border-top: 1px solid rgba(255, 255, 255, 25%);
 

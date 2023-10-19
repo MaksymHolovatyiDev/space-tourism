@@ -1,3 +1,19 @@
+## Description
+
+This project is for space travel, with this project you can choose your final destination, read about the team and learn more about the technology used for space travel. We wish you a pleasant trip!
+
+## To run project
+
+```bash
+npm i
+npm run build
+npm run preview
+# or
+yarn install
+yarn build
+yarn preview
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
