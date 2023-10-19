@@ -17,10 +17,9 @@ export function Header() {
   return (
     <motion.header
       key="header"
-      initial={{scaleY: 0, top: 0}}
+      initial={{scaleY: 0}}
       animate={{
         scaleY: 1,
-        top: 40,
         transition: {duration: 0.5, ease: 'circOut'},
       }}
       exit={{opacity: 0, transition: {duration: 0.5, ease: 'circIn'}}}

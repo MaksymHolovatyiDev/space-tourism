@@ -1,4 +1,3 @@
-import {Header} from 'entities/header';
 import {motion, useIsPresent} from 'framer-motion';
 import {ReactNode} from 'react';
 import styles from './styled.module.scss';
@@ -15,8 +14,6 @@ export function RouteWrapper({children}: {children: ReactNode}) {
         style={{originX: isPresent ? 0 : 1}}
         className={styles['privacy-screen']}
       />
-      <Header />
-
       {children}
     </>
   );

@@ -1,16 +1,21 @@
 .root {
+  position: relative;
+
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 
-  padding: 0 165px 131px;
+  padding: 387px 165px 131px;
 
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('./assets/background-home-desktop.jpg');
+
+  overflow: auto;
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;

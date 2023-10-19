@@ -1,17 +1,22 @@
 .root {
+  position: relative;
+
   height: 100vh;
   width: 100vw;
 
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
 
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('./assets/background-technology-desktop.jpg');
 
+  padding-top: 272px;
   padding-left: 165px;
   padding-bottom: 97px;
+
+  overflow-x: hidden;
 
   @media screen and (max-width: 1300px) {
     justify-content: center;

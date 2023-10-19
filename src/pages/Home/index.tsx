@@ -1,10 +1,12 @@
 import {ExploreButton} from 'entities/explore-button';
 import style from './styled.module.scss';
 import {Typography} from 'shared';
+import {Header} from 'entities/header';
 
 function Home() {
   return (
     <main className={style.root}>
+      <Header />
       <div className={style.container}>
         <Typography variant="heading5">So, you wat to travel to</Typography>
         <Typography variant="heading1">Space</Typography>
